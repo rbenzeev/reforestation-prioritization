@@ -8,3 +8,7 @@ To run from Shiny and RStudio:
 1. Clone the repository https://github.com/rbenzeev/reforestation-prioritization or download it and decompress the zip file
 2. Open the reforestation-prioritization.R file in RStudio
 3. Click on Run App inside the RStudio interface
+
+Workflow: TBD
+
+Example usage (data formats and types used): TBD
