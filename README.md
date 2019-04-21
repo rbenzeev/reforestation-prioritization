@@ -19,7 +19,7 @@ The script labelled EAA-week8-function.R is included to demonstrate the function
 ### Instructions: 
 To run from Shiny and RStudio:
 1. Clone the repository https://github.com/rbenzeev/reforestation-prioritization or download it and decompress the zip file
-2. Open the reforestation-prioritization-app.R file in RStudio
+2. Open the Spatial-reforestation-prioritization-marker-app.R file in RStudio
 3. Click on Run App inside the RStudio interface
 
 ### User guide: 
