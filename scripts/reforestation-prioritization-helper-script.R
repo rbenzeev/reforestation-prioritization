@@ -5,6 +5,7 @@ library(dplyr)
 library(RColorBrewer)
 library(shapefiles)
 library(rgdal)
+library(raster)
 
 # Read in data
 flora <- read.csv('../data/FLORA_occs_final.csv', stringsAsFactors = FALSE)
@@ -27,12 +28,5 @@ amph_df <- amph_filter %>%
   mutate(species_type = "amphibians")
 bird_df <- bird_filter %>%
   mutate(species_type = "birds")
-
-# Create a new dataframe with all species
-species <- rbind(flora_df, amph_df, bird_df)
-
-
-
-
 
 
