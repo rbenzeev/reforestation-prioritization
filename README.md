@@ -26,7 +26,9 @@ There are two scripts located in the scripts folder. The script labelled Spatial
 The helper script is labelled Spatial-reforestation-prioritization-helper-script.R and is included as a source script to run all necessary code for the app. 
 
 ### Other folders in the repo:
-In the 'docs' folder you can view a blogpost on this topic and in the 'presentations' folder you can view a project status presentation as well as a final presentation for the Earth Analytics Applications course at University of Colorado Boulder. 
+* docs: you can view a blogpost I wrote on this topic 
+* presentations: you can view a project status presentation as well as a final presentation for the Earth Analytics Applications course at University of Colorado Boulder. 
+* images: several images of different layers on the app 
 
 ### Instructions: 
 To run from Shiny and RStudio:
