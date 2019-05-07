@@ -10,12 +10,12 @@ source('Spatial-reforestation-prioritization-helper-script.R')
 
 # User Interface
 ui <- fluidPage(
-  titlePanel("Reforestation Prioritization Interactive Biodiversity Map"),
+  titlePanel("Reforestation Prioritization Interactive Map"),
    
       leafletOutput("map", height = 800)
 
   )
-
+# Server
 server <- function(input, output) {
   
   output$map <- renderLeaflet({
