@@ -13,11 +13,11 @@ To answer these questions, I will use scenario-driven land use modeling techniqu
 
 ### Data and example usage: 
 The data folder holds the species occurrences files: 
-*FLORA_occs_final.csv
-*ANFIBIOS_occs_final.csv
-*AVES_occs_final.csv
+* FLORA_occs_final.csv
+* ANFIBIOS_occs_final.csv
+* AVES_occs_final.csv
 And the folder: 
-*ba_municipios 
+* ba_municipios 
 This folder holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
 
 ### Role of the scripts: 
