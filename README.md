@@ -49,7 +49,7 @@ The three biodiversity layers consist of:
 * Amphibian data 
 * Bird data 
 
-These data are represented by marker clusters, where the number listed on each cluster represents the number of species occurences at that latitude and longitude. As you zoom in, the marker cluster values will decrease as the clusters split to be more specific to the finer scale. The socio-economic data is represented at the municipality scale colored by probability of reforestation support. On the legend at the top right of the app browser window, check or uncheck each of these four layers to view desired outputs together or separately. Zoom in to any locality to view a finer scale representation of the various metrics. 
+These data are represented by marker clusters, where the number listed on each cluster represents the number of species occurences at that latitude and longitude. As you zoom in, the marker cluster values will decrease as the clusters split to be more specific to the finer scale. The socio-economic data is represented at the municipality scale colored by probability of reforestation support. Blue municipalities represent higher levels of support, while yellow represents lower levels. On the legend at the top right of the app browser window, check or uncheck each of these layers to view desired outputs together or separately. Zoom in to any locality to view a finer scale representation of the various metrics. 
 
 ### Uses of application:
 This tool allows: 
