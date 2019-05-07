@@ -12,14 +12,23 @@ To address these concerns, my research project will pose the following questions
 To answer these questions, I will use scenario-driven land use modeling techniques to predict how socio-economic variables influence reforestation success, compare these outcomes with a business-as-usual scenario, and prioritize sites that optimize for synergies between multiple benefits. As an output of my research I hope to create a tool to prioritize sites for reforestation that accounts both for biodiversity priority areas and for those places where community support is strong enough to ensure the long-term success of the reforestation project. This repository contains a draft version of this tool, which will be used to solicit feedback from local communities on functionality and data that would be most useful for supporting reforestation efforts.
 
 ### Data and example usage: 
-The data folder holds the species occurrences files: FLORA_occs_final.csv, ANFIBIOS_occs_final.csv, AVES_occs_final.csv, and the folder: ba_municipios, which holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
+The data folder holds the species occurrences files: 
+* FLORA_occs_final.csv
+* ANFIBIOS_occs_final.csv
+* AVES_occs_final.csv
+And the folder: 
+* ba_municipios 
+
+The folder holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
 
 ### Role of the scripts: 
 There are two scripts located in the scripts folder. The script labelled Spatial-reforestation-prioritization-app.R is the code for the RShiny app. It works to read in the data and then represent the data in an interactive, spatially explicit format when running the app. 
 The helper script is labelled Spatial-reforestation-prioritization-helper-script.R and is included as a source script to run all necessary code for the app. 
 
 ### Other folders in the repo:
-In the 'docs' folder you can view a blogpost on this topic and in the 'presentations' folder you can view a project status presentation as well as a final presentation for the Earth Analytics Applications course at University of Colorado Boulder. 
+* docs: you can view a blogpost I wrote on this topic 
+* presentations: you can view a project status presentation as well as a final presentation for the Earth Analytics Applications course at University of Colorado Boulder. 
+* images: several images of different layers on the app 
 
 ### Instructions: 
 To run from Shiny and RStudio:
@@ -36,16 +45,16 @@ To run from Shiny and RStudio:
 Once the app has launched in your web browser, you can zoom in and out of the map as well as check and uncheck the available layers. Three of the layers represent biodiversity in terms of species distributions and one layer represents socio-economic reforestation support. 
 
 The three biodiversity layers consist of: 
-1. Vegetation data
-2. Amphibian data 
-3. Bird data 
+* Vegetation data
+* Amphibian data 
+* Bird data 
 
 These data are represented by marker clusters, where the number listed on each cluster represents the number of species occurences at that latitude and longitude. As you zoom in, the marker cluster values will decrease as the clusters split to be more specific to the finer scale. The socio-economic data is represented at the municipality scale colored by probability of reforestation support. On the legend at the top right of the app browser window, check or uncheck each of these four layers to view desired outputs together or separately. Zoom in to any locality to view a finer scale representation of the various metrics. 
 
 ### Uses of application:
 This tool allows: 
-1. Decision-makers to identify site-specific land use trade-offs with the greatest chance of reforestation success
-2. Community members to test and explore reforestation priorities. 
+* Decision-makers to identify site-specific land use trade-offs with the greatest chance of reforestation success
+* Community members to test and explore reforestation priorities. 
 It will provide practitioners, decision-makers, and researchers with evidence-based steps to prioritize sites where reforestation projects are likely to succeed in the long-term, benefiting both forest livelihoods and biodiversity conservation. By identifying areas of optimized socio-economic and habitat prioritizations, this project will contribute to the effort to reach the AFRP’s 15-million-hectare reforestation goal.
 
 ### Acknowledgements: 
