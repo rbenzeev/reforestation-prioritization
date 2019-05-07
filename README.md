@@ -14,12 +14,12 @@ The data folder holds the species occurrences files: FLORA_occs_final.csv, ANFIB
 
 ### Role of the scripts: 
 The script labelled Spatial-reforestation-prioritization-app.R is the code for the RShiny app. It works to read in the data and then represent the data in an interactive, spatially explicit format when running the app. 
-The helper script is labelled reforestation-prioritization-helper-script.R and is included as a source script to run all necessary code for the app. 
+The helper script is labelled Spatial-reforestation-prioritization-helper-script.R and is included as a source script to run all necessary code for the app. 
 
 ### Instructions: 
 To run from Shiny and RStudio:
 1. Clone the repository https://github.com/rbenzeev/reforestation-prioritization or download it and decompress the zip file
-2. Open both the Spatial-reforestation-prioritization-app.R file and the reforestation-prioritization-helper-script.R file in RStudio 
+2. Open both the Spatial-reforestation-prioritization-app.R file and the Spatial-reforestation-prioritization-helper-script.R file in RStudio 
 3. Save both files to a folder within your working directory
 4. In the Spatial-reforestation-prioritization-app.R file, click on 'Run App' inside the RStudio interface  
 
