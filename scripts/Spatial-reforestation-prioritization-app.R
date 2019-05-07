@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-source('reforestation-prioritization-helper-script.R')
+source('Spatial-reforestation-prioritization-helper-script.R')
 
 # User Interface
 ui <- fluidPage(
