@@ -12,7 +12,13 @@ To address these concerns, my research project will pose the following questions
 To answer these questions, I will use scenario-driven land use modeling techniques to predict how socio-economic variables influence reforestation success, compare these outcomes with a business-as-usual scenario, and prioritize sites that optimize for synergies between multiple benefits. As an output of my research I hope to create a tool to prioritize sites for reforestation that accounts both for biodiversity priority areas and for those places where community support is strong enough to ensure the long-term success of the reforestation project. This repository contains a draft version of this tool, which will be used to solicit feedback from local communities on functionality and data that would be most useful for supporting reforestation efforts.
 
 ### Data and example usage: 
-The data folder holds the species occurrences files: FLORA_occs_final.csv, ANFIBIOS_occs_final.csv, AVES_occs_final.csv, and the folder: ba_municipios, which holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
+The data folder holds the species occurrences files: 
+*FLORA_occs_final.csv
+*ANFIBIOS_occs_final.csv
+*AVES_occs_final.csv
+And the folder: 
+*ba_municipios 
+This folder holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
 
 ### Role of the scripts: 
 There are two scripts located in the scripts folder. The script labelled Spatial-reforestation-prioritization-app.R is the code for the RShiny app. It works to read in the data and then represent the data in an interactive, spatially explicit format when running the app. 
