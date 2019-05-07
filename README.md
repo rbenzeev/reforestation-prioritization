@@ -33,9 +33,9 @@ To run from Shiny and RStudio:
 Once the app has launched in your web browser, you can zoom in and out of the map as well as check and uncheck the available layers. Three of the layers represent biodiversity in terms of species distributions and one layer represents socio-economic reforestation support. 
 
 The three biodiversity layers consist of: 
-1. vegetation data
-2. amphibian data 
-3. bird data 
+1. Vegetation data
+2. Amphibian data 
+3. Bird data 
 
 These data are represented by marker clusters, where the number listed on each cluster represents the number of species occurences at that latitude and longitude. As you zoom in, the marker cluster values will decrease as the clusters split to be more specific to the finer scale. The socio-economic data is represented at the municipality scale colored by probability of reforestation support. On the legend at the top right of the app browser window, check or uncheck each of these four layers to view desired outputs together or separately. Zoom in to any locality to view a finer scale representation of the various metrics. 
 
