@@ -14,59 +14,75 @@
 #' We're talking the equivalent of 350 million football fields worth of forest, folks!
 #' But, the local reality is that it is impossible to reforest everywhere. This brings us to a tricky decision: what areas should you choose to reforest and why? \
 #' I'd like to share the initial stage of my research project where I'm exploring different scenarios to prioritize sites for reforestation. 
-#' The first step of my project is to prioritize areas that are most important for biodiversity, since preventing species extinctions is one of the main goals of the international and national reforestation commitments. 
-#' Below, I show my initial findings of biodiversity distributions to influence reforestation site prioritization in one landscape in the Atlantic Forest of Bahia, Brazil. 
+#' This project builds off of the idea that having the support of local people is key for forests to remain standing. 
+#' Otherwise, planted trees are likely to just be deforested again (re-deforested?) soon after starting reforestation projects. \
+#' So, to try and keep trees standing for a longer period of time and achieve reforestation goals, my project seeks to prioritize sites for reforestation based on both areas of biodiversity priority areas areas of strong community support. 
+#' Paying attention to both these components will hopefully increase the benefits to both people participating in reforestation projects and species residing in the nearby forests. 
+#' Plus, preventing species extinctions is one of the main goals of the international and national reforestation commitments. 
+#' Below, I show my initial findings in one landscape in the Atlantic Forest of Bahia, Brazil. 
 #' 
-#' ## What did I find?
-#' My key findings from developing these maps are that there do seem to be definite biodiversity hotspots across the landscape. 
+#' 
+#' ## Methods: Developing a tool
+#' I developed a tool called an Rshiny application, which is a way to visualize species distributions on one interactive map based on species distribution data. 
+#' Below is a picture of the app interface. 
+#'
+#+ fig.height=8, fig.width=8
+#' ![Figure 1: Map of the data overlaid on Bahia's landscape](../images/Full-app-image.png)
+#'
+#' In this picture, you can see the map of my study site, which is the state of Bahia. The numbers in the circles on the map represent species distribution data. So, areas with larger numbers have more species living there. 
+#' The shapes on the state itself represent municipalities. Each municipality is colored according to level of reforestation support by the people residing in the municipality. 
+#' Blue areas represent the highest level of support while yellow areas represent lowest areas of support by landholders. 
+#' As part of the tool, you can turn on and off layers (shown with the checkmarks on the top right) to view the different datasets on their own. 
+#' You can also zoom in to see the specifics of certain municipalities and areas. 
+#' 
+#' 
+#' 
+#' 
+#' ## Findings: Biodiversity hotspots and hopespots
+#' So far, I do not have any clear findings from analyzing the social reforestation support data. 
+#' But, I do have a couple observations about the biodiversity data that I will share with you below. 
+#' I found that there do seem to be definite biodiversity hotspots across the landscape. 
 #' But, the hotspots are different depending on the species. 
 #' 
-#' ## How did I find this out?
-#' I developed a tool called an Rshiny application, which is a way to visualize species distributions on one interactive map based on species distribution data. 
-#' Below are a couple images that demonstrate what these data look like across the landscape
-#'
-#' #### Map of Bahia Plants
-#+ fig.height=8, fig.width=8
-#' ![Figure 1: Look where there are the most different types of plants!](images/Bahia-full-flora-map.png)
-#'
-#' #### Map of Bahia Amphibians
-#+ fig.height=8, fig.width=8
-#' ![Figure 2: Check out where the amphibians are located](images/Bahia-full-amphibian-map.png)
-#'
-#' #### Map of Bahia Birds
-#+ fig.height=8, fig.width=8
-#' ![Figure 3: Here are the best habitat spots for birds](images/Bahia-full-bird-map.png)
-#'
+#' Now, I'll show you a few findings from my data that I found to be particularly interesting.  
+#' The pictures below show the best biodiversity hotspot for each type of species. 
+#' Notice that the main hotspots are different depending on the species category. \
 #' 
-#' Now, I'll demonstrate my key findings to you with the maps below. 
-#' These are the biggest hotspot for each broader type of animal or plant. 
-#' Note that the main hotspots are different depending on the species category. 
+#' For example, the main hotspot for plant species is in the central/southern section of the state.
 #' 
 #' #### Bahia flora hotspot
 #+ fig.height=8, fig.width=8
-#' ![Figure 4: This is the reserve that is the main hotspot for plant species](images/Flora-hotspot.png)
+#' ![Figure 2: This is the reserve that is the main hotspot for plant species](../images/Flora-hotspot.png)
+#' 
+#' On the other hand, the primary hotspot for amphibians is a little farther north.
 #' 
 #' #### Bahia amphibian hotspot
-#' 
 #+ fig.height=8, fig.width=8
-#' ![Figure 5: Area near to the town of Itabuna contains the best habitat for amphibians](images/Amphibian-hotspot.png)
+#' ![Figure 3: Area near to the town of Itabuna contains the best habitat for amphibians](../images/Amphibian-hotspot.png)
+#' 
+#' The primary habitat for birds is in the Western section of the state. 
 #' 
 #' #### Bahia birds hotspot
 #+ fig.height=8, fig.width=8
-#' ![Figure 6: A different reserve has the highest distributions of birds](images/Birds-hotspot.png)
+#' ![Figure 4: A different reserve has the highest distributions of birds](../images/Birds-hotspot.png)
 #' 
 #' This leads me to believe that it is important to pay attention to lots of different types of species, and their preferred ranges, to target reforestation for the survival of lots of different species. 
 #' 
 #' 
-#' ## Why does this matter?
-#' If decision-makers know the areas that are the most biodiverse for many different types of species, they can target these areas for reforestation. This way, we can restore the habitats of many more animals and plants than we would have by simply reforesting at random. 
+#' ## So, why should I care?
+#' If decision-makers know the areas that are the most biodiverse for multiple types of species, they can target these areas for reforestation. 
+#' This way, we can restore the habitats of many more animals and plants than we would have by simply reforesting at random. 
+#' Combining areas of biodiversity priority with areas that have high levels of support by the people living there will increase the chances that the trees will survive into the longer term future.  
 #' 
 #' 
 #' 
-#' ## Next Steps
-#' Next, I will combine the biodiversity data with an on-the-ground component representing community support. 
-#' By optimizing these two factors, decision-makers can prioritize areas that are good for biodiversity but also have the social support allowing reforestation practices to persist in the long term. 
-#' When I add in this aspect, anyone who uses my app will be able to zoom in and play around with areas that they are interested in learning about. 
+#' ## Future Steps
+#' I want to make my tool as useful as possible for the decision-makers in Brazil that are working to choose where to reforest and why. \
+#' To improve my tool, I first plan on adding in additional layers of data to explore. 
+#' Possibilities include: population data, demographic data, and a basemap displaying current forest cover. \
+#' Second, I want to show the tool to decision-makers and hear from them what will make it more usable and useful. 
+#' I will make additions to the tool based on their ideas and suggestions. 
+#' 
 #' 
 #' 
 #' ## Want to know more? 
