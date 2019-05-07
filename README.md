@@ -13,8 +13,11 @@ To answer these questions, I will use scenario-driven land use modeling techniqu
 The data folder holds the species occurrences files: FLORA_occs_final.csv, ANFIBIOS_occs_final.csv, AVES_occs_final.csv, and the folder: ba_municipios, which holds four files to encompass the municipality shapefiles for the state of Bahia, Brazil. Each .csv file is already cleaned to represent species distributions in the Atlantic Forest. The dataframe columns include: scientific name, latitude, and longitude. Species distribution data is sourced from Strassburg et al. (2019). Municipality shapefiles are sourced from the Brazilian Institute of Geography and Statistics (IBGE) (ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/UFs/BA/). Municipality boundaries were updated on IBGE as of 2018. 
 
 ### Role of the scripts: 
-The script labelled Spatial-reforestation-prioritization-app.R is the code for the RShiny app. It works to read in the data and then represent the data in an interactive, spatially explicit format when running the app. 
+There are two scripts located in the scripts folder. The script labelled Spatial-reforestation-prioritization-app.R is the code for the RShiny app. It works to read in the data and then represent the data in an interactive, spatially explicit format when running the app. 
 The helper script is labelled Spatial-reforestation-prioritization-helper-script.R and is included as a source script to run all necessary code for the app. 
+
+### Other folders in the repo:
+In the 'docs' folder you can view a blogpost on this topic and in the 'presentations' folder you can view a project status presentation as well as a final presentation for the Earth Analytics Applications course at University of Colorado Boulder. 
 
 ### Instructions: 
 To run from Shiny and RStudio:
