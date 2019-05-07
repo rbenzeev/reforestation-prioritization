@@ -24,6 +24,7 @@ In the 'docs' folder you can view a blogpost on this topic and in the 'presentat
 ### Instructions: 
 To run from Shiny and RStudio:
 1. Clone the repository https://github.com/rbenzeev/reforestation-prioritization or download it and decompress the zip file
+![ ](images/Full-app-image.png)
 2. From the scripts folder, open both the Spatial-reforestation-prioritization-app.R file and the Spatial-reforestation-prioritization-helper-script.R file in RStudio 
 3. Save both files to a folder within your working directory
 4. At the top of the Spatial-reforestation-prioritization-helper-script.R file, install all packages listed at the top of the script. For the Shiny app, for example, you can do this by typing 'install.packages("shiny")' in the R console. 
